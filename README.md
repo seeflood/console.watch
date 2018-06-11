@@ -13,28 +13,44 @@
 ## Usage
 
 现在我们有一个对象:
+```
 var a={
 	b:1,
 	obj:{
 		c:2
 	}
 }
+```
 
 1. 当a的b属性被修改时,控制台进断点
 
 
-打开chrome控制台，输入console.watch(a,"b")
+打开chrome控制台，输入
+```
+console.watch(a,"b")
+```
 
-![]{/images/demo1-1.png}
+![](/images/demo1-1.png)
 
-输入a.b=3,可以看到控制台进断点
+输入
+```
+a.b=3
+```
+可以看到控制台进断点
 
-![]{/images/demo1-2.png}
+![](/images/demo1-2.png)
 
 2. 当a的任意子属性修改时，控制台进断点
 
-打开chrome控制台，输入console.watch(a)
+打开chrome控制台，输入
+```
+console.watch(a)
+```
 
-输入a.obj={},可以看到控制台进断点
+输入
+```
+a.obj={}
+```
+可以看到控制台进断点
 
-![]{/images/demo2-1.png}
+![](/images/demo2-1.png)
