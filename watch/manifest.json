@@ -1,0 +1,15 @@
+{  
+  "name": "watch",  
+  "version": "0.0.1",
+  "manifest_version":2,
+  "description": "You can use console.watch(object,propName) to 'break on property change'.",  
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "watch",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["watch.js"]
+  }]
+} 
