@@ -4,7 +4,7 @@
 
 一个chrome插件，提供“当对象的属性被修改时，控制台进断点”
 
-## Deployment
+## Installation
 
 在chrome://extensions/中,确认已开启“开发者模式”,点击“加载已解压的扩展程序”,选中本项目里的watch文件夹
 
