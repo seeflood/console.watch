@@ -1,15 +1,52 @@
-{  
-  "name": "watch",  
+{
+  "name": "watch",
   "version": "0.0.1",
-  "manifest_version":2,
-  "description": "You can use console.watch(object,propName) to 'break on property change'.",  
-  "browser_action": {  
-    "default_icon": "icon.png" ,
+  "manifest_version": 2,
+  "description": "You can use console.watch(object,propName) to 'break on property change'.",
+  "browser_action": {
+    "default_icon": "icon.png",
     "default_title": "watch",
     "default_popup": "popup.html"
   },
-  "content_scripts": [{
-    "matches": ["http://*/*","https://*/*"],
-    "js": ["watch.js"]
-  }]
-} 
+  "commands": {
+    "知乎": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+P"
+      },
+      "description": "切换到标题里带有‘知乎’字样的 tab"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+L",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    },
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Ctrl+E",
+        "windows": "Alt+P",
+        "mac": "Command+Shift+O"
+      }
+    }
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "watch.js"
+      ]
+    }
+  ]
+}
