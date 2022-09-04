@@ -12,14 +12,21 @@
     "知乎": {
       "suggested_key": {
         "default": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+P"
+        "mac": "Command+Z"
       },
       "description": "切换到标题里带有‘知乎’字样的 tab"
+    },
+    "bilibili": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+B"
+      },
+      "description": "切换到标题里带有‘bilibili’字样的 tab"
     },
     "_execute_browser_action": {
       "suggested_key": {
         "windows": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+L",
+        "mac": "Command+Shift+Z",
         "chromeos": "Ctrl+Shift+U",
         "linux": "Ctrl+Shift+J"
       }

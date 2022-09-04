@@ -11,7 +11,7 @@ chrome.commands.onCommand.addListener(function (command) {
     },
     function (tabs) {
       // console.log(tabs);
-      tabs.forEach((tab) => {
+      for (const tab of tabs) {
         if (tab.title.indexOf(command) > -1) {
           console.log(tab.title);
           // switch tab
@@ -19,8 +19,10 @@ chrome.commands.onCommand.addListener(function (command) {
 
           // switch window
           chrome.windows.update(tab.windowId, { focused: true });
+
+          return;
         }
-      });
+      }
     }
   );
 });
