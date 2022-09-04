@@ -9,19 +9,19 @@
     "default_popup": "popup.html"
   },
   "commands": {
-    "知乎": {
+    "知乎@https://www.zhihu.com/": {
       "suggested_key": {
         "default": "Ctrl+Shift+Y",
         "mac": "Command+Z"
       },
-      "description": "切换到标题里带有‘知乎’字样的 tab"
+      "description": "切换到标题里带有‘知乎’字样的 tab，如果没有这样的 tab，就打开 url"
     },
-    "bilibili": {
+    "bilibili@https://www.bilibili.com/": {
       "suggested_key": {
         "default": "Ctrl+Shift+Y",
         "mac": "Command+B"
       },
-      "description": "切换到标题里带有‘bilibili’字样的 tab"
+      "description": "切换到标题里带有‘bilibili’字样的 tab，如果没有这样的 tab，就打开 url"
     },
     "_execute_browser_action": {
       "suggested_key": {
